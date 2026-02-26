@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #38bdf8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        Write a short professional summary about yourself here. 
+        Mention your background, interests, and career goals.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills-list">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Flutter</span>
+      <span class="skill">SQL</span>
+      <span class="skill">Python</span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Job Title – Company Name</h3>
+      <p><small>Start Date – End Date</small></p>
+      <p>
+        Describe your responsibilities and achievements here.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Job Title – Company Name</h3>
+      <p><small>Start Date – End Date</small></p>
+      <p>
+        Describe your responsibilities and achievements here.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Project Name</h3>
+      <p>
+        Short description of the project and technologies used.
+      </p>
+      <p>
+        <a href="#" target="_blank">Live Demo</a> |
+        <a href="#" target="_blank">GitHub Repo</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Project Name</h3>
+      <p>
+        Short description of the project and technologies used.
+      </p>
+      <p>
+        <a href="#" target="_blank">Live Demo</a> |
+        <a href="#" target="_blank">GitHub Repo</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Your Name. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
